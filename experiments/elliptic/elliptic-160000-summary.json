@@ -1,0 +1,26 @@
+{
+  "bound": 160000,
+  "previous_bound": 150000,
+  "status": "complete",
+  "fibers": {
+    "elliptic-lazy-b160000": {
+      "bound": 160000,
+      "fiber": 1,
+      "next_n": 0,
+      "previous_bound": 150000
+    },
+    "elliptic-lazy-b160000-f1": {
+      "bound": 160000,
+      "fiber": 2,
+      "next_n": 0,
+      "previous_bound": 150000
+    }
+  },
+  "hits_files": [],
+  "new_results": [],
+  "high_follow": "ALL FIBERS COMPLETE; HIGH FOLLOW FINISHED",
+  "completion_log_mtime_utc": "2026-11-07T03:33:21.770294+00:00",
+  "verified_utc": "2026-11-07T03:33:26.707097+00:00",
+  "paired_power_filter": true,
+  "coefficient_symmetry_reduced": true
+}

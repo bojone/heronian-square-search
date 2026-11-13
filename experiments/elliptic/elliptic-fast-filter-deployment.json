@@ -1,0 +1,86 @@
+{
+  "deployed_utc": "2026-11-06T17:33:13.929309+00:00",
+  "predeployment_snapshot": "20261106T173221.614536Z",
+  "previous_source": "elliptic_vector_search_before_fast.py",
+  "source_sha256": "98c84950ecaaf151325884a23cd5fda6f47640854a92ad65f6a0cec01ea26aef",
+  "library_sha256": "580155fc71e9eb44bbfe9a2b8cd3ae4e9bdbe3a3ab2e6ede424cde32542444dd",
+  "old_worker_pids": [
+    66005,
+    66006
+  ],
+  "states_at_deployment": {
+    "elliptic-lazy-b70000": {
+      "bound": 70000,
+      "fiber": 0,
+      "next_n": 133331,
+      "previous_bound": 60000
+    },
+    "elliptic-lazy-b70000-f1": {
+      "bound": 70000,
+      "fiber": 1,
+      "next_n": 133481,
+      "previous_bound": 60000
+    }
+  },
+  "log_lines_at_deployment": {
+    "elliptic-lazy-b70000": 13335,
+    "elliptic-lazy-b70000-f1": 13350
+  },
+  "status": "production fast filter verified on both bound-70000 fibers",
+  "new_workers_verified": true,
+  "new_workers": {
+    "elliptic-lazy-b70000": {
+      "pid": 71971,
+      "resume_at_launch": 133333,
+      "models": 64,
+      "first_progress": [
+        0,
+        133351,
+        -66675,
+        0
+      ],
+      "state_log_match": true
+    },
+    "elliptic-lazy-b70000-f1": {
+      "pid": 71972,
+      "resume_at_launch": 133488,
+      "models": 64,
+      "first_progress": [
+        1,
+        133491,
+        -66745,
+        0
+      ],
+      "state_log_match": true
+    }
+  },
+  "result_monitor_empty": true,
+  "observed_60s": {
+    "seconds": 60.0042167250067,
+    "fibers": {
+      "elliptic-lazy-b70000": {
+        "rows": 640,
+        "rows_per_second": 10.665917079345535,
+        "before": 134701,
+        "after": 135341
+      },
+      "elliptic-lazy-b70000-f1": {
+        "rows": 620,
+        "rows_per_second": 10.332607170615988,
+        "before": 134831,
+        "after": 135451
+      }
+    }
+  },
+  "paired_power_deployment": {
+    "deployed_utc": "2026-11-06T17:47:36.610235+00:00",
+    "predeployment_snapshot": "20261106T174412.116549Z",
+    "previous_source": "elliptic_filter_single.cpp",
+    "previous_library": "elliptic_filter_single.so",
+    "library_sha256": "a17832275d6ce8785bd7edae7886e6c44862495d5f4ef424f905b60b74d2c20b",
+    "selected_for_bound": 80000,
+    "previous_bound": 70000,
+    "verification": "all bound-70000 masks matched; full bound-1000 hits and checkpoint matched",
+    "no_worker_restart_needed": true
+  }
+}

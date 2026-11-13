@@ -1,0 +1,23 @@
+{
+  "status": "approved_single_stage_after_160000",
+  "bound": 170000,
+  "previous_bound": 160000,
+  "source_primes": [10000019, 10001081],
+  "fibers": [
+    {
+      "fiber": 0,
+      "valid_models": 60,
+      "prepare_seconds": 49.63963387417607,
+      "known_point_passes": true
+    },
+    {
+      "fiber": 1,
+      "valid_models": 60,
+      "prepare_seconds": 49.68571025808342,
+      "known_point_passes": true
+    }
+  ],
+  "minimum_models_required": 32,
+  "launch_condition": "The bound-160000 launch must first be verified. Its follow must then exit and the stage-chain validator must confirm both terminal states, terminal logs and result files.",
+  "automatic_beyond_170000": false
+}

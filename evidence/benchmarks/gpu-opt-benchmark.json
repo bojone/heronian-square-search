@@ -1,0 +1,130 @@
+{
+  "production_binary_for_new_workers": "gpu_search_v42",
+  "production_transition": "All eight GPUs resumed existing checkpoints with v42. GPU3 produced a genuinely new 512-row checkpoint at 5547740; state, log and binary hash were independently verified. Candidate counters restart at each process launch.",
+  "previous_v40_production_checkpoint": {
+    "pid": 66375,
+    "gpu": 0,
+    "state": "gpu-0aa-state.txt",
+    "previous_resume": 5700512,
+    "resume": 5701024,
+    "candidates": 176422156051,
+    "state_and_log_match": true,
+    "result_monitor_empty": true
+  },
+  "candidate_definition": "count at entry of test_d, after range and area modular filters",
+  "reference_interval": {
+    "limit": 10000000,
+    "first": 7500000,
+    "last": 7500511,
+    "candidates": 39091522776
+  },
+  "correctness": {
+    "full_5000_candidates": 151842556,
+    "full_5000_v37_v38_v39_v40_match_v32": true,
+    "second_known_solution_v37_v38_v40_match_v32": true,
+    "high_interval_5862500_5863011_candidates": 168781861471,
+    "high_interval_v37_match_v32": true,
+    "register_comparison_candidates_and_results_match": true,
+    "v37_random_interval_boundary_checks": 300000
+  },
+  "v37": {
+    "change": "conservative floating-point range prefilter before cached Gaussian products",
+    "same_load_old_seconds": 491,
+    "same_load_new_seconds": 529,
+    "candidate_match": true,
+    "deployed": false,
+    "conclusion": "7.7 percent slower in the same-load comparison"
+  },
+  "v38": {
+    "change": "v37 with per-pair precomputed floating-point range bounds",
+    "status": "completed",
+    "same_load_old_seconds": 487,
+    "same_load_new_seconds": 482,
+    "candidate_match": true,
+    "deployed": false,
+    "conclusion": "about 1 percent faster; not selected"
+  },
+  "v39": {
+    "change": "launch_bounds(128,2)",
+    "registers": 191,
+    "main_loop_spill_stores": 0,
+    "main_loop_spill_loads": 0,
+    "status": "completed",
+    "same_load_new_seconds": 644,
+    "candidate_match": true,
+    "deployed": false
+  },
+  "v40": {
+    "change": "launch_bounds(128,3)",
+    "registers": 168,
+    "main_loop_spill_stores": 0,
+    "main_loop_spill_loads": 0,
+    "status": "completed",
+    "same_load_old_seconds": 643,
+    "same_load_new_seconds": 629,
+    "candidate_match": true,
+    "second_known_solution_match": true,
+    "selected_for_new_workers": true,
+    "conclusion": "about 2.2 percent faster; roll out without interrupting existing v32 workers"
+  },
+  "v41": {
+    "change": "32-bit gcd with split and inert prime products",
+    "same_load_v40_seconds": 467,
+    "same_load_v41_seconds": 486,
+    "candidate_match": true,
+    "equivalent_integer_branch_pairs_checked": 4501500,
+    "deployed": false,
+    "conclusion": "about 4.1 percent slower than v40; keep v40"
+  },
+  "v42": {
+    "change": "Skip gcd exactly when l cannot contribute an inert factor or both numbers lack split factors",
+    "registers": 162,
+    "main_loop_spill_stores": 0,
+    "main_loop_spill_loads": 0,
+    "full_5000_candidates": 151842556,
+    "second_known_solution_match": true,
+    "equivalent_integer_branch_pairs_checked": 4501500,
+    "same_load_v40_seconds": 477,
+    "same_load_v42_seconds": 470,
+    "second_same_load_v42_seconds": 467,
+    "same_load_candidate_match": true,
+    "selected_for_new_workers": true,
+    "first_production_checkpoint_verified": true,
+    "first_production_checkpoint": {
+      "pid": 76126,
+      "gpu": 3,
+      "baseline_resume": 5547228,
+      "resume": 5547740,
+      "new_rows": 512,
+      "candidates": 206246404989,
+      "seconds": 344,
+      "binary_sha256": "11f24854ce9af373637cd04cdbba56923c93f82146875475ec26cf833c7d7127",
+      "state_and_log_match": true,
+      "candidate_counter_restarted_at_process_launch": true
+    },
+    "conclusion": "about 1.5 percent faster in the first comparison and consistent in the second; deploy by natural queue continuation"
+  },
+  "v43": {
+    "change": "Exact cheap mask prefilter for the 22 inert primes below 180, using otherwise unused NumberInfo padding",
+    "registers": 168,
+    "main_loop_spill_stores": 0,
+    "main_loop_spill_loads": 0,
+    "full_5000_candidates": 151842556,
+    "second_known_solution_match": true,
+    "mask_branch_pairs_checked": 4501500,
+    "same_load_v42_seconds": 467,
+    "same_load_v43_seconds": 498,
+    "same_load_candidate_match": true,
+    "status": "completed",
+    "deployed": false,
+    "conclusion": "about 6.6 percent slower than v42; do not deploy"
+  },
+  "v44": {
+    "change": "Attempted 32-bit cached Gaussian coordinates and 64-bit products",
+    "full_5000_candidate_match": true,
+    "second_known_solution_match": false,
+    "status": "rejected",
+    "reason": "Cached Gaussian coordinates can grow like the square of the represented integer, not the integer itself; the explicit range check rejected the known-solution preparation",
+    "deployed": false
+  }
+}

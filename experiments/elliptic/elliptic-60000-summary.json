@@ -1,0 +1,22 @@
+{
+  "bound": 60000,
+  "previous_bound": 50000,
+  "status": "complete",
+  "fibers": {
+    "elliptic-lazy-b60000": {
+      "bound": 60000,
+      "fiber": 1,
+      "next_n": 0,
+      "previous_bound": 50000
+    },
+    "elliptic-lazy-b60000-f1": {
+      "bound": 60000,
+      "fiber": 2,
+      "next_n": 0,
+      "previous_bound": 50000
+    }
+  },
+  "hits_files": [],
+  "new_results": [],
+  "high_follow": "ALL FIBERS COMPLETE; HIGH FOLLOW FINISHED"
+}

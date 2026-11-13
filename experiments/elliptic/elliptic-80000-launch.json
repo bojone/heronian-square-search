@@ -1,0 +1,48 @@
+{
+  "bound": 80000,
+  "previous_bound": 70000,
+  "verified_utc": "2026-11-06T17:49:07.071521+00:00",
+  "library_sha256": "a17832275d6ce8785bd7edae7886e6c44862495d5f4ef424f905b60b74d2c20b",
+  "workers": {
+    "elliptic-lazy-b80000": {
+      "pid": 72778,
+      "models": 64,
+      "state": {
+        "bound": 80000,
+        "fiber": 0,
+        "next_n": 1571,
+        "previous_bound": 70000
+      },
+      "log_state_match": true
+    },
+    "elliptic-lazy-b80000-f1": {
+      "pid": 72779,
+      "models": 64,
+      "state": {
+        "bound": 80000,
+        "fiber": 1,
+        "next_n": 1561,
+        "previous_bound": 70000
+      },
+      "log_state_match": true
+    }
+  },
+  "result_monitor_empty": true,
+  "observed_60s": {
+    "seconds": 60.00305591290817,
+    "fibers": {
+      "elliptic-lazy-b80000": {
+        "rows": 4440,
+        "rows_per_second": 73.996231232697,
+        "before": 8161,
+        "after": 12601
+      },
+      "elliptic-lazy-b80000-f1": {
+        "rows": 4410,
+        "rows_per_second": 73.49625669734094,
+        "before": 8091,
+        "after": 12501
+      }
+    }
+  }
+}

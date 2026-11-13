@@ -1,0 +1,78 @@
+{
+  "small_primes": [
+    65521,
+    65519,
+    65497,
+    65479,
+    65449,
+    65447,
+    65437,
+    65423
+  ],
+  "models": 65,
+  "records": [
+    {
+      "n": -50001,
+      "counts": {
+        "base": 0,
+        "combined": 0
+      },
+      "seconds": {
+        "base": [
+          0.36401146394200623,
+          0.36522056302055717,
+          0.36339003103785217
+        ],
+        "combined": [
+          0.3565910211764276,
+          0.3610844111535698,
+          0.35776531393639743
+        ]
+      },
+      "best_speedup": 1.0190666883282535
+    },
+    {
+      "n": -55000,
+      "counts": {
+        "base": 0,
+        "combined": 0
+      },
+      "seconds": {
+        "base": [
+          0.32857031282037497,
+          0.3298912630416453,
+          0.3274015018250793
+        ],
+        "combined": [
+          0.3316653848160058,
+          0.32939600804820657,
+          0.32877765013836324
+        ]
+      },
+      "best_speedup": 0.9958143495681511
+    },
+    {
+      "n": -59999,
+      "counts": {
+        "base": 0,
+        "combined": 0
+      },
+      "seconds": {
+        "base": [
+          0.37702805595472455,
+          0.3681957700755447,
+          0.3672393639571965
+        ],
+        "combined": [
+          0.3375742929056287,
+          0.33592376904562116,
+          0.33492199215106666
+        ]
+      },
+      "best_speedup": 1.0964922356951496
+    }
+  ],
+  "status": "completed",
+  "deployed": false,
+  "conclusion": "Only one of eight small primes produced a valid model. Speedups were inconsistent and small; the production fibers remain unchanged."
+}

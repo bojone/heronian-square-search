@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "bound": 120000,
+  "previous_bound": 110000,
+  "issue": "After negative mirror coefficients were skipped, positive coefficients occupied odd positions and the old position%10 checkpoint condition never fired.",
+  "fix": "Save at position zero and whenever position%20==19 in both checkpoint paths.",
+  "regression": {
+    "bound": 1000,
+    "periodic_positions": "1 followed by every multiple of 20 through 2000 for each fiber",
+    "hits_match_original_paired_filter_byte_for_byte": true,
+    "interrupt_resume_position": 41,
+    "resume_hits_match_byte_for_byte": true
+  },
+  "graceful_stop_states": {
+    "elliptic-lazy-b120000": {
+      "bound": 120000,
+      "fiber": 0,
+      "next_n": 110067,
+      "previous_bound": 110000
+    },
+    "elliptic-lazy-b120000-f1": {
+      "bound": 120000,
+      "fiber": 1,
+      "next_n": 113121,
+      "previous_bound": 110000
+    }
+  },
+  "resumed_workers": {
+    "elliptic-lazy-b120000": {
+      "pid": 86559,
+      "models": 64,
+      "state": {
+        "bound": 120000,
+        "fiber": 0,
+        "next_n": 115160,
+        "previous_bound": 110000
+      },
+      "log_state_match": true
+    },
+    "elliptic-lazy-b120000-f1": {
+      "pid": 86560,
+      "models": 64,
+      "state": {
+        "bound": 120000,
+        "fiber": 1,
+        "next_n": 116620,
+        "previous_bound": 110000
+      },
+      "log_state_match": true
+    }
+  },
+  "coverage_preservation": "Resume starts at each saved position. All remaining positive coefficients are evaluated; only their already-equivalent negative mirrors are skipped.",
+  "result_monitor_empty": true
+}

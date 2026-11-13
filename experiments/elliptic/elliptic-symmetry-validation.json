@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "change": "Enumerate one representative of (n,m) and (-n,-m): require n nonnegative, and m nonnegative when n is zero.",
+  "mathematical_reason": "Negation fixes x and changes the sign of y. It therefore preserves r and q squared in both torsion cosets, and preserves the incremental bound shell.",
+  "models": 64,
+  "paired_filter_masks": {
+    "bound": 1000,
+    "n_values": [0, 1, 2, 3, 7, 100, 1000],
+    "fibers": 2,
+    "all_full_m_coset_masks_equal": true
+  },
+  "exact_rational_points": {
+    "n_values": [0, 1, 2],
+    "m_values": [0, 1, 2],
+    "fibers": 2,
+    "nonidentity_points_checked_per_fiber": 8,
+    "torsion_cosets_per_point": 2,
+    "opposite_point_identity": true,
+    "r_and_q_squared_match": true
+  },
+  "complete_bound_1000": {
+    "hits_match_original_paired_filter_byte_for_byte": true,
+    "known_solutions_preserved": [
+      [1853, 4380, 4427],
+      [11789, 68104, 68595]
+    ],
+    "terminal_state": {
+      "bound": 1000,
+      "fiber": 2,
+      "next_n": 0,
+      "previous_bound": 0
+    }
+  },
+  "same_load_benchmark": {
+    "original_seconds": 6.6458609260153025,
+    "reduced_seconds": 5.040715637849644,
+    "speedup": 1.3184359927215432,
+    "note": "Bound 1000 includes substantial fixed initialization and does not establish large-bound throughput."
+  },
+  "interrupt_resume": {
+    "interrupted_state": {
+      "bound": 1000,
+      "fiber": 0,
+      "next_n": 213,
+      "previous_bound": 0
+    },
+    "completed": true,
+    "hits_match_original_paired_filter_byte_for_byte": true
+  },
+  "production_status": "Bound 120000 was gracefully resumed from its actual positions after fixing positive-coefficient periodic checkpoints; see elliptic-120000-resume.json.",
+  "periodic_checkpoint_regression": {
+    "condition": "position==0 or position%20==19 in both checkpoint paths",
+    "bound_1000_expected_positions_passed": true,
+    "hits_match_original_paired_filter_byte_for_byte": true,
+    "interrupt_resume_position": 41,
+    "production_resume_positions": [110067, 113121],
+    "production_first_verified_positions": [115160, 116620]
+  }
+}

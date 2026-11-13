@@ -1,0 +1,74 @@
+{
+  "scope": "Original completed search environment and archived timing, not a new measurement of the packaging host",
+  "timezone": "UTC",
+  "platform": {
+    "operating_system": "Linux",
+    "architecture": "x86_64",
+    "logical_cpus_total": 288,
+    "main_cpu_threads": 272,
+    "lookahead_cpu_threads": 16,
+    "gpu_vendor": "NVIDIA",
+    "gpu_count": 8
+  },
+  "toolchain": {
+    "cxx": "G++ 11.4",
+    "cxx_standard": "C++17",
+    "cuda": "12.9",
+    "nvcc_path_on_original_host": "/usr/local/cuda/bin/nvcc",
+    "python": "3.12",
+    "production_python_dependencies": "standard library only",
+    "elliptic_experiment_additional_dependency": "NumPy"
+  },
+  "search": {
+    "root_limit": 10000000,
+    "square_side_limit": 100000000000000,
+    "complete_intervals": [[1, 10000000]],
+    "root_coverage": 1.0,
+    "logical_pair_coverage": 1.0,
+    "unique_solutions_found": [
+      [1853, 4380, 4427],
+      [11789, 68104, 68595]
+    ],
+    "third_solution_found": false,
+    "main_checkpoint": {
+      "begin": 1180045,
+      "end": 10000000,
+      "resume": 10000001,
+      "pairs": 38895816330946,
+      "candidates": 1501947057268700
+    },
+    "nonempty_result_files": 17,
+    "nonempty_result_lines": 34,
+    "result_files_independently_verified": true
+  },
+  "timing": {
+    "project_start_inferred_from_deadline": "2026-11-04T13:58:51.043289+00:00",
+    "cpu_v18_deployed": "2026-11-06T12:54:32.559566+00:00",
+    "elliptic_bound_200000_complete": "2026-11-07T08:37:00+00:00",
+    "main_search_complete": "2026-11-10T00:11:36.018248+00:00",
+    "full_coverage_confirmed": "2026-11-10T00:15:20.328615+00:00",
+    "final_snapshot": "2026-11-10T00:46:58.514678+00:00",
+    "original_hard_deadline": "2026-11-11T13:58:51.043289+00:00",
+    "calendar_span_seconds_reported": 468764,
+    "calendar_span_hours_approx": 130.21,
+    "goal_active_work_seconds": 426960,
+    "goal_active_work_display": "118 hours 36 minutes",
+    "main_v18_worker_seconds": 299820,
+    "main_v18_worker_hours_approx": 83.28,
+    "calendar_seconds_note": "Reported seconds truncate the subsecond difference; project start is inferred from the one-week deadline. Calendar span, active goal work and worker runtime are different measurements."
+  },
+  "original_production_hashes": {
+    "cpu_source_search_v18_cpp_sha256": "523ca758c71d7dd0cb3dd4c3f61f2d02f710aa1c2892aee8dfca294d0afffffc",
+    "gpu_source_gpu_search_v42_cu_sha256": "a4cfcccba18582c6526d56aaec3e7ad202f4d9bca029b6f944b70973388a27c6",
+    "cpu_binary_search_or_search_v13_sha256": "9c1f2f0566f441bcfb54bdcd2b1aaafa15634d2a141a61e5d26d7cd850f3e33e",
+    "gpu_binary_gpu_search_v42_sha256": "11f24854ce9af373637cd04cdbba56923c93f82146875475ec26cf833c7d7127"
+  },
+  "original_final_snapshot": {
+    "name": "20261110T004658.514678Z",
+    "files": 1975,
+    "bytes": 40947002,
+    "manifest": "evidence/final-snapshot-manifest.json",
+    "write_verification_passed": true,
+    "historical_snapshot_payload_included": false
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "status": "validated_not_deployed",
+  "candidate_primes": [
+    1000003, 1000033, 1000037, 1000039, 1000081, 1000099, 1000117, 1000121,
+    1000133, 1000151, 1000159, 1000171, 1000183, 1000187, 1000193, 1000199,
+    1000211, 1000213, 1000231, 1000249, 1000253, 1000273, 1000289, 1000291,
+    1000303, 1000313, 1000333, 1000357, 1000367, 1000381, 1000393, 1000397,
+    1000403, 1000409, 1000423, 1000427, 1000429, 1000453, 1000457, 1000507,
+    1000537, 1000541, 1000547, 1000577, 1000579, 1000589, 1000609, 1000619,
+    1000621, 1000639, 1000651, 1000667, 1000669, 1000679, 1000691, 1000697,
+    1000721, 1000723, 1000763, 1000777, 1000793, 1000829, 1000847, 1000849
+  ],
+  "mathematical_safety": "Each valid model applies an exact Legendre-symbol necessary condition for a rational square. Rejected models are skipped by the existing preparation. The final candidate verification is unchanged.",
+  "bound_1000": {
+    "valid_models_per_fiber": [62, 64],
+    "scalar_vector_cases_per_fiber": 1098,
+    "all_scalar_vector_masks_match": true,
+    "both_known_solutions_survive": true,
+    "complete_two_fiber_hits_match_original_byte_for_byte": true,
+    "terminal_state": {"bound": 1000, "fiber": 2, "next_n": 0, "previous_bound": 0},
+    "reduced_search_seconds": 2.6875290910247713
+  },
+  "bound_120000_previous_110000": {
+    "valid_models_per_fiber": [40, 38],
+    "known_solution_survives_with_previous_bound_temporarily_zero": true,
+    "fiber_0": {
+      "old_prepare_seconds": 44.884014253970236,
+      "new_prepare_seconds": 25.826641581952572,
+      "central_speedup_range_from_best_of_four": [1.1259544588172588, 1.3010500052329212],
+      "outer_speedup_range_from_best_of_four": [1.2974650126200813, 1.334142220688962]
+    },
+    "fiber_1": {
+      "old_prepare_seconds": 43.652221392141655,
+      "new_prepare_seconds": 25.007125367876142,
+      "central_speedup_range_from_best_of_four": [1.1485597475517701, 1.3434785223446923],
+      "outer_speedup_range_from_best_of_four": [1.2984871001388096, 1.3448325340968135]
+    },
+    "sampled_outer_points": [110001, 115000, 119999],
+    "sampled_masks_empty_for_old_and_new": true
+  },
+  "limitation": "Valid model counts depend on the bound and fiber. A future stage must inspect model counts and must not extrapolate these counts or timings without validation.",
+  "production_status": "Not deployed in the running bound-120000 workers. Candidate for the next fresh incremental stage after completion checks."
+}

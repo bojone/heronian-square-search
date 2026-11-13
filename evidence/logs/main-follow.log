@@ -1,0 +1,4 @@
+2026-11-06T06:56:20.743063+00:00 ADOPT pid=53808 deadline=2026-11-11T13:53:51.043289+00:00 state={'version': 1, 'limit': 10000000, 'begin': 1022125, 'end': 10000000, 'resume': 1022125, 'pairs': 127456549053, 'candidates': 9135853555179}
+2026-11-06T12:54:32.559566+00:00 START main pid=64065 state={'version': 1, 'limit': 10000000, 'begin': 1022125, 'end': 10000000, 'resume': 1180045, 'pairs': 1475914879477, 'candidates': 116151036255179}
+2026-11-10T00:11:36.018248+00:00 MAIN COMPLETE
+2026-11-10T00:11:36.022151+00:00 MAIN FOLLOW FINISHED complete=True state={'version': 1, 'limit': 10000000, 'begin': 1180045, 'end': 10000000, 'resume': 10000001, 'pairs': 38895816330946, 'candidates': 1501947057268700}

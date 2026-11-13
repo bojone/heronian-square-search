@@ -1,0 +1,74 @@
+{
+  "production_binary": "search_v18 (deployed as search)",
+  "change": "Replace the full 64-bit gcd for shared inert primes by a 32-bit gcd with the product of distinct inert prime factors of l.",
+  "correctness": {
+    "full_5000_candidates": 151842556,
+    "full_5000_state_and_results_match": true,
+    "second_known_solution_candidates": 1194756,
+    "second_known_solution_match": true,
+    "equivalent_integer_branch_pairs_checked": 4501500,
+    "dynamic_coverage_reuse_passed": true
+  },
+  "first_comparison": {
+    "range": "500000-500015",
+    "threads_per_worker": 16,
+    "candidates": 6757984326,
+    "old_seconds": 134,
+    "new_seconds": 115,
+    "speedup": 1.1652173913,
+    "state_and_results_match": true
+  },
+  "second_comparison": {
+    "range": "1160000-1160015",
+    "threads_per_worker": 16,
+    "candidates": 8762620948,
+    "old_seconds": 158,
+    "new_seconds": 152,
+    "speedup": 1.0394736842,
+    "state_and_results_match": true
+  },
+  "deployment": {
+    "pre_restart_snapshot": "20261106T125334.256382Z",
+    "old_pid": 53808,
+    "new_pid": 64065,
+    "watchdog_start_utc": "2026-11-06T12:54:32.559566+00:00",
+    "resume": 1180045,
+    "deadline_unchanged": true,
+    "progress_at_seconds": 20,
+    "progress_candidates": 35123098607,
+    "result_monitor_empty": true
+  },
+  "deployed": true,
+  "lookahead_transition": {
+    "deployed_utc": "2026-11-06T16:29:35.573429+00:00",
+    "binary": "search_v13",
+    "implementation": "search_v18",
+    "sha256": "9c1f2f0566f441bcfb54bdcd2b1aaafa15634d2a141a61e5d26d7cd850f3e33e",
+    "previous_binary": "search_v13_before_v18",
+    "stage_10_pid": 55212,
+    "stage_10_uninterrupted": true,
+    "first_new_checkpoint_verified": true,
+    "first_new_checkpoint": {
+      "stage": 11,
+      "pid": 70683,
+      "range": [7900000, 7999999],
+      "resume": 7900085,
+      "pairs": 438878104,
+      "candidates": 6523502929,
+      "state_and_log_match": true,
+      "known_results_reverified": true
+    }
+  },
+  "v19": {
+    "change": "Cheap modulo prefilter for shared inert primes 3, 7, 11 and 19 before the full 32-bit gcd",
+    "full_5000_candidates": 151842556,
+    "second_known_solution_match": true,
+    "same_load_range": "1160000-1160015",
+    "same_load_candidates": 8762620948,
+    "same_load_state_and_results_match": true,
+    "same_load_v18_seconds": 142,
+    "same_load_v19_seconds": 143,
+    "deployed": false,
+    "conclusion": "No speed benefit; retain v18 and remove the experimental executables"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "bound": 200000,
+  "previous_bound": 190000,
+  "verified_utc": "2026-11-07T07:15:14.753533+00:00",
+  "library_sha256": "a17832275d6ce8785bd7edae7886e6c44862495d5f4ef424f905b60b74d2c20b",
+  "source_sha256": "afa5670b7af832711e00ab9a6a3f9704e22baa5c9492152293ed09529916afb7",
+  "workers": {
+    "elliptic-lazy-b200000": {
+      "pid": 108063,
+      "models": 60,
+      "state": {
+        "bound": 200000,
+        "fiber": 0,
+        "next_n": 260,
+        "previous_bound": 190000
+      },
+      "log_state_match": true
+    },
+    "elliptic-lazy-b200000-f1": {
+      "pid": 108064,
+      "models": 58,
+      "state": {
+        "bound": 200000,
+        "fiber": 1,
+        "next_n": 20,
+        "previous_bound": 190000
+      },
+      "log_state_match": true
+    }
+  },
+  "coefficient_symmetry_reduced": true,
+  "result_monitor_empty": true
+}

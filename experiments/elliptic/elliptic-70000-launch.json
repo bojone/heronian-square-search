@@ -1,0 +1,24 @@
+{
+  "bound": 70000,
+  "previous_bound": 60000,
+  "worker_pids": [
+    66005,
+    66006
+  ],
+  "initial_states": {
+    "elliptic-lazy-b70000": {
+      "bound": 70000,
+      "fiber": 0,
+      "next_n": 931,
+      "previous_bound": 60000
+    },
+    "elliptic-lazy-b70000-f1": {
+      "bound": 70000,
+      "fiber": 1,
+      "next_n": 921,
+      "previous_bound": 60000
+    }
+  },
+  "result_monitor_empty": true,
+  "completion_60000_snapshot": "20261106T135541.879770Z"
+}

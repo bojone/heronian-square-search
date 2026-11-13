@@ -1,0 +1,52 @@
+{
+  "cpu_probe": {
+    "root": 1116389,
+    "weight": 125,
+    "threads": 1,
+    "seconds": 443,
+    "candidates": 7175008050,
+    "verified": true
+  },
+  "small_gpu_batch": {
+    "binary": "gpu_search_v36",
+    "gpu": 0,
+    "shared_with_normal_gpu_worker": true,
+    "first": 1116384,
+    "last": 1120479,
+    "min_weight": 100,
+    "rows": 166,
+    "seconds": 3131,
+    "candidates": 1105278882993,
+    "independently_verified": true,
+    "new_solutions": 0
+  },
+  "large_gpu_batch": {
+    "binary": "gpu_search_v35",
+    "gpu": 1,
+    "shared_with_normal_gpu_worker": true,
+    "first": 1100000,
+    "last": 1116383,
+    "min_weight": 100,
+    "rows": 680,
+    "seconds": 7200,
+    "candidates": null,
+    "checkpoint": false,
+    "independently_verified": false,
+    "new_solutions": 0,
+    "termination": "hard_time_limit_without_checkpoint"
+  },
+  "single_row_1447225": {
+    "root": 1447225,
+    "weight": 1125,
+    "cpu_observed_seconds": 1061,
+    "gpu_kernel_seconds": 1468,
+    "gpu_task_wall_seconds": 1492.337,
+    "gpu_candidates": 41795211005,
+    "independently_verified": true,
+    "new_solutions": 0,
+    "shared_with_normal_gpu_worker": true,
+    "main_completed_row_before_gpu": true,
+    "followup_128_row_batch_cancelled_before_start": true,
+    "deployment": "not_expanded_shared_gpu_was_slower_and_reduced_normal_gpu_throughput"
+  }
+}

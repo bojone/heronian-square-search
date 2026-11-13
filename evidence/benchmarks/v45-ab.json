@@ -1,0 +1,28 @@
+{
+  "timestamp_utc": "2026-11-07T09:24:25.260053+00:00",
+  "range": [
+    7500000,
+    7500127
+  ],
+  "gpu": 1,
+  "versions": {
+    "v42": {
+      "seconds": 174,
+      "state": "version 1\nlimit 10000000\nbegin 7500000\nend 7500127\nresume 7500128\ncandidates 10369431230\n",
+      "results_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "binary_sha256": "11f24854ce9af373637cd04cdbba56923c93f82146875475ec26cf833c7d7127",
+      "log": "v45-ab-v42.log"
+    },
+    "v45": {
+      "seconds": 207,
+      "state": "version 1\nlimit 10000000\nbegin 7500000\nend 7500127\nresume 7500128\ncandidates 6086161661\n",
+      "results_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "binary_sha256": "11223fdd8965e2afc22ee583e7ec9e8d00dedfbff668ec60af68eb69bbde7192",
+      "log": "v45-ab-v45.log"
+    }
+  },
+  "deploy": false,
+  "speedup_v42_over_v45": 0.8405797101449275,
+  "v45_slowdown_percent": 18.965517241379317,
+  "conclusion": "Equivalent hits on regression ranges, but slower on the full 128-row A/B benchmark. Keep v42 in production."
+}

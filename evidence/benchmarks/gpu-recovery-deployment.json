@@ -1,0 +1,199 @@
+{
+  "verified_utc": "2026-11-07T12:56:32.996137+00:00",
+  "status": "continuous_search_aj_repair_before_target_loaded",
+  "queue_at_verification": {
+    "pid": 105929,
+    "stage": "ah",
+    "started_utc": "2026-11-07T06:17:59+00:00",
+    "source_mtime_utc": "2026-11-07T03:48:07.188447+00:00",
+    "note": "The recovery queue is loaded. The four original tails and the newly interrupted gpu-0af interval have continuous checkpoints and await scheduled completion."
+  },
+  "rebalance_pid": 114409,
+  "gpu_workers_preserved": 8,
+  "source_sha256": {
+    "gpu_queue.py": "64b602ab2242e5286a74bfd820340850000e85da7b3b2d72f189c53bc050abb5",
+    "gpu_rebalance.py": "88a693be1e60e431a51cfd0d0c02e2262237ac5f1a48df7d78f66b8bb5121d14",
+    "gpu_search_v42": "11f24854ce9af373637cd04cdbba56923c93f82146875475ec26cf833c7d7127",
+    "checkpoint_backup.py": "084874287074a5315bf32f6c9347d61568ac17da046f6756f75de9604e483d73"
+  },
+  "recovery_candidates": [
+    {
+      "state": "gpu-0x-state.txt",
+      "first": 6000000,
+      "last": 6012499,
+      "resume": 6010752,
+      "continuous_log": true
+    },
+    {
+      "state": "gpu-0ab-state.txt",
+      "first": 5600000,
+      "last": 5612499,
+      "resume": 5612288,
+      "continuous_log": true
+    },
+    {
+      "state": "gpu-0ad-state.txt",
+      "first": 5400000,
+      "last": 5412499,
+      "resume": 5412288,
+      "continuous_log": true
+    },
+    {
+      "state": "gpu-1z-state.txt",
+      "first": 5812500,
+      "last": 5824999,
+      "resume": 5824788,
+      "continuous_log": true
+    }
+  ],
+  "missing_root_positions": 2384,
+  "additional_incomplete_at_live_launch": [
+    {
+      "state": "gpu-0af-state.txt",
+      "first": 5200000,
+      "last": 5212499,
+      "resume": 5212288,
+      "remaining": 212,
+      "continuous_log": true
+    }
+  ],
+  "validation": {
+    "real_checkpoint_cross_checks": 248,
+    "isolated_tail_replay": [
+      "gpu-0x",
+      "gpu-0ab",
+      "gpu-0ad",
+      "gpu-1z"
+    ],
+    "invalid_checkpoint_archived_before_reset": true,
+    "recovery_rebalance_signals": 0,
+    "ordinary_rebalance_behavior_preserved": true,
+    "production_workers_used_for_tests": false,
+    "search_arithmetic_or_filter_changed": false,
+    "previous_stage_rebalance_suppressed": true,
+    "production_workers_preserved_during_monitor_reload": 8,
+    "v45_equivalence": {
+      "disabled_filter_states_and_results_match": true,
+      "known_solutions_preserved": true,
+      "source_sha256": "be64fcf0916ffc35c1e23d965a8e7f256fede3c93f9bbffb907e07826e923102",
+      "binary_sha256": "11223fdd8965e2afc22ee583e7ec9e8d00dedfbff668ec60af68eb69bbde7192",
+      "benchmark_pending": false,
+      "benchmark_file": "v45-ab.json",
+      "v42_seconds": 174,
+      "v45_seconds": 207,
+      "deployed": false
+    },
+    "next_queue_repair_before_target": true,
+    "current_queue_unchanged": "ai",
+    "first_actual_recovery": {
+      "range": [
+        6000000,
+        6012499
+      ],
+      "state_complete": true,
+      "continuous_log": true,
+      "coverage_included": true,
+      "coverage_timestamp_utc": "2026-11-07T10:50:45.522567+00:00"
+    },
+    "four_original_tails_verified": true,
+    "all_original_tails_verified_in_coverage": true,
+    "original_tail_completion_coverage_timestamp_utc": "2026-11-07T11:25:47.126601+00:00",
+    "rebalance_restored_after_direct_worker_exit": true,
+    "ag0_recovered_and_in_coverage": true,
+    "no_earlier_incomplete_at_stage_ai": true,
+    "all_six_recovery_intervals_complete": true,
+    "aj_loaded_repair_before_target_version": true
+  },
+  "pending_at_stage_ai": {
+    "timestamp_utc": "2026-11-07T09:26:26.163857+00:00",
+    "stage": "ai",
+    "pending_earlier_intervals": [
+      {
+        "gpu": 0,
+        "state": "gpu-0x-state.txt",
+        "first": 6000000,
+        "last": 6012499,
+        "resume": 6010752,
+        "remaining": 1748
+      },
+      {
+        "gpu": 0,
+        "state": "gpu-0ab-state.txt",
+        "first": 5600000,
+        "last": 5612499,
+        "resume": 5612288,
+        "remaining": 212
+      },
+      {
+        "gpu": 0,
+        "state": "gpu-0ad-state.txt",
+        "first": 5400000,
+        "last": 5412499,
+        "resume": 5412288,
+        "remaining": 212
+      },
+      {
+        "gpu": 0,
+        "state": "gpu-0af-state.txt",
+        "first": 5200000,
+        "last": 5212499,
+        "resume": 5212288,
+        "remaining": 212
+      },
+      {
+        "gpu": 0,
+        "state": "gpu-0ag-state.txt",
+        "first": 5100000,
+        "last": 5112499,
+        "resume": 5111776,
+        "remaining": 724
+      },
+      {
+        "gpu": 1,
+        "state": "gpu-1z-state.txt",
+        "first": 5812500,
+        "last": 5824999,
+        "resume": 5824788,
+        "remaining": 212
+      }
+    ]
+  },
+  "direct_recovery": {
+    "gpu": 1,
+    "log": "direct-tail-recovery.log",
+    "completed_original_tails": [
+      {
+        "state": "gpu-0x-state.txt",
+        "first": 6000000,
+        "last": 6012499
+      },
+      {
+        "state": "gpu-0ab-state.txt",
+        "first": 5600000,
+        "last": 5612499
+      },
+      {
+        "state": "gpu-0ad-state.txt",
+        "first": 5400000,
+        "last": 5412499
+      },
+      {
+        "state": "gpu-0af-state.txt",
+        "first": 5200000,
+        "last": 5212499
+      },
+      {
+        "state": "gpu-1z-state.txt",
+        "first": 5812500,
+        "last": 5824999
+      }
+    ],
+    "all_complete": true
+  },
+  "recovery_pending": [],
+  "current_queue": {
+    "pid": 116525,
+    "stage": "aj",
+    "source_sha256": "64b602ab2242e5286a74bfd820340850000e85da7b3b2d72f189c53bc050abb5"
+  }
+}
